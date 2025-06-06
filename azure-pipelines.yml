@@ -1,0 +1,53 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '9.0.x'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Restore dependencies'
+  inputs:
+    command: 'restore'
+    projects: '**/*.csproj'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build project'
+  inputs:
+    command: 'build'
+    projects: '**/*.csproj'
+    arguments: '--configuration Release'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Run tests'
+  inputs:
+    command: 'test'
+    projects: '**/*.csproj'
+    arguments: '--configuration Release'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Publish project'
+  inputs:
+    command: 'publish'
+    projects: '**/*.csproj'
+    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish artifacts'
+  inputs:
+    pathToPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: 'drop'
+    publishLocation: 'Container'
+
+- task: AzureWebApp@1
+  displayName: 'Deploy to Azure App Service'
+  inputs:
+    azureSubscription: 'Azure for Students'
+    appType: 'webApp'
+    appName: 'https://srikanth-webapp-28-hcbkhkambsh6d8a5.canadaeast-01.azurewebsites.net/'
+    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
