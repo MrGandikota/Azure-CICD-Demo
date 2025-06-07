@@ -47,7 +47,7 @@ steps:
 - task: AzureWebApp@1
   displayName: 'Deploy to Azure App Service'
   inputs:
-    azureSubscription: 'Azure for Students'
+    azureSubscription: 'Azure subscription 1'
     appType: 'webApp'
-    appName: 'https://srikanth-webapp-28-hcbkhkambsh6d8a5.canadaeast-01.azurewebsites.net/'
+    appName: 'GandikotaDemo'
     package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
