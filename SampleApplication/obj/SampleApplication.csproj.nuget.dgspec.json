@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Azure\\Projects\\SampleWebApp\\SampleApplication\\SampleApplication.csproj": {}
+    "D:\\Azure\\Projects\\SampleWebApp\\sampleApplication\\SampleApplication.csproj": {}
   },
   "projects": {
-    "D:\\Azure\\Projects\\SampleWebApp\\SampleApplication\\SampleApplication.csproj": {
+    "D:\\Azure\\Projects\\SampleWebApp\\sampleApplication\\SampleApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Azure\\Projects\\SampleWebApp\\SampleApplication\\SampleApplication.csproj",
+        "projectUniqueName": "D:\\Azure\\Projects\\SampleWebApp\\sampleApplication\\SampleApplication.csproj",
         "projectName": "SampleApplication",
-        "projectPath": "D:\\Azure\\Projects\\SampleWebApp\\SampleApplication\\SampleApplication.csproj",
+        "projectPath": "D:\\Azure\\Projects\\SampleWebApp\\sampleApplication\\SampleApplication.csproj",
         "packagesPath": "C:\\Users\\megan\\.nuget\\packages\\",
-        "outputPath": "D:\\Azure\\Projects\\SampleWebApp\\SampleApplication\\obj\\",
+        "outputPath": "D:\\Azure\\Projects\\SampleWebApp\\sampleApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
