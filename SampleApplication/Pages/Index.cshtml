@@ -1,11 +1,140 @@
 ﻿@page
-@model IndexModel
-@{
-    ViewData["Title"] = "Demo Application 28";
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srikanth Gandikota - Resume</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6 max-w-4xl bg-white shadow-lg rounded-lg mt-6">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800">Srikanth Gandikota</h1>
+            <h2 class="text-2xl text-gray-600">DevOps Engineer</h2>
+            <p class="text-gray-600 mt-2">
+                <a href="mailto:me.gandikota@gmail.com" class="text-blue-600">me.gandikota@gmail.com</a> | 
+                <a href="tel:+14035856728" class="text-blue-600">+1 (403) 585-6728</a> | 
+                <a href="https://linkedin.com/in/mr-gandikota/" class="text-blue-600">LinkedIn</a> | 
+                <a href="http://github.com/MrGandikota" class="text-blue-600">GitHub</a>
+            </p>
+        </header>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <h2 class="display-4">SampleApplication by Gandikota</h2>
-    <p>Azure-focused DevOps Engineer skilled in CI/CD pipelines, PowerShell automation, and database management</p>
-</div>
+        <!-- Summary -->
+        <section class="mb-8">
+            <h3 class="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">Summary</h3>
+            <p class="text-gray-700 mt-4">
+                Azure-focused DevOps Engineer with 2.5 years of experience building and optimizing CI/CD pipelines, automating cloud infrastructure, and enhancing database and deployment efficiency in the insurance sector. Reduced release cycles by 35%, operational costs by 30%, and database script execution time by 50% through Azure DevOps, Octopus Deploy, and PowerShell automation. Skilled in cloud-native infrastructure, DevSecOps practices, and DuckCreek application management. Passionate about streamlining software delivery and exploring AIOps for system reliability.
+            </p>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="mb-8">
+            <h3 class="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">Professional Experience</h3>
+            <div class="mt-4">
+                <h4 class="text-xl font-medium text-gray-800">DevOps Engineer - AXIS Specialty Canada Services ULC, Halifax, NS</h4>
+                <p class="text-gray-600">Jan 2022 - June 2024</p>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2">
+                    <li>Designed and maintained Azure DevOps CI/CD pipelines, boosting deployment speed by 35% and ensuring 99.9% reliability.</li>
+                    <li>Automated build and release processes using Octopus Deploy, reducing deployment time by 40% and manual errors by 60%.</li>
+                    <li>Managed Azure VMs and IIS web servers, optimizing performance and security for critical applications.</li>
+                    <li>Developed PowerShell scripts to automate routine tasks, saving 20 hours weekly.</li>
+                    <li>Orchestrated DuckCreek application deployments, migrating on-premises systems to DuckCreek Cloud (DCOD) with zero downtime.</li>
+                    <li>Created Azure VM images for developer environments, enhancing setup consistency.</li>
+                    <li>Collaborated with development and QA teams to align code quality using Azure Git and TFVC.</li>
+                    <li>Streamlined DuckCreek policy, billing, and claims processes, improving operational efficiency by 25%.</li>
+                </ul>
+                <p class="text-gray-600 mt-2">Note: Jun 2024 - Present: Pursued self-study in Azure DevOps and AIOps tools (e.g., Azure Monitor) while awaiting Permanent Residency (obtained May 2025).</p>
+            </div>
+            <div class="mt-6">
+                <h4 class="text-xl font-medium text-gray-800">Lab Assistant - Matrusri Engineering College, Hyderabad, India</h4>
+                <p class="text-gray-600">Sep 2015 - Nov 2020</p>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2">
+                    <li>Maintained lab infrastructure, troubleshooting hardware/software issues to ensure 100% uptime for 50+ workstations.</li>
+                    <li>Upgraded network hardware and software, improving connectivity and system performance by 20%.</li>
+                    <li>Trained 100+ students and staff on lab tools, reducing onboarding time and enhancing efficiency.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-8">
+            <h3 class="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">Education</h3>
+            <div class="mt-4">
+                <h4 class="text-xl font-medium text-gray-800">Network Support Specialist Certificate</h4>
+                <p class="text-gray-600">Southern Alberta Institute of Technology, Calgary, AB | Graduated: Mar 2022</p>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-xl font-medium text-gray-800">Diploma in Electronics and Communication Engineering</h4>
+                <p class="text-gray-600">Jawaharlal Nehru Govt. Polytechnic (SBTET), Hyderabad, India | Graduated: May 2014</p>
+            </div>
+            <p class="text-gray-600 mt-2">Note: 2020-2021: Completed certificate program and self-studied Azure DevOps and PowerShell automation.</p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="mb-8">
+            <h3 class="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">Technical Skills</h3>
+            <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+                <li><strong>CI/CD & DevOps Tools:</strong> Azure DevOps, Octopus Deploy, Git, Azure Git, TFVC</li>
+                <li><strong>Cloud & Infrastructure:</strong> Azure VMs, ARM/Bicep, Terraform (learning), Docker (learning)</li>
+                <li><strong>Automation & Scripting:</strong> PowerShell, Bash</li>
+                <li><strong>Web Services:</strong> IIS, Tomcat</li>
+                <li><strong>Databases:</strong> Microsoft SQL Server</li>
+                <li><strong>Monitoring & Logging:</strong> On Demand Control Hub (ODCH), Azure Monitor</li>
+                <li><strong>Business Applications:</strong> DuckCreek (Policy, Billing, Claims, Insights)</li>
+                <li><strong>Other:</strong> DevSecOps practices, cloud-native deployments, Azure VM image creation</li>
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section class="mb-8">
+            <h3 class="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2">Projects</h3>
+            <div class="mt-4">
+                <h4 class="text-xl font-medium text-gray-800">Database Script Automation</h4>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2">
+                    <li>Automated Microsoft SQL Server script execution by deploying packages via Azure DevOps, reducing execution time by 50% and eliminating manual errors.</li>
+                    <li>Streamlined database updates for DuckCreek applications, ensuring consistency across environments.</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-xl font-medium text-gray-800">Static Forms Release Automation</h4>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2">
+                    <li>Built CI/CD pipeline with Azure DevOps and Octopus Deploy, increasing release frequency from monthly to weekly.</li>
+                    <li>Integrated approval gates and automated testing, reducing defects by 30%.</li>
+                    <li>Eliminated manual intervention, cutting deployment time by 40%.</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-xl font-medium text-gray-800">Azure VM Management and Optimization</h4>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2">
+                    <li>Optimized Azure VMs, reducing operational costs by 30% through resource scaling and custom VM images.</li>
+                    <li>Streamlined developer VM provisioning, cutting setup time by 25%.</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-xl font-medium text-gray-800">PowerShell Automation Suite</h4>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2">
+                    <li>Developed scripts to automate repetitive tasks, saving 60% of manual effort and 15 hours weekly.</li>
+                    <li>Automated Azure VM configuration and DuckCreek application updates.</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-xl font-medium text-gray-800">Octopus Deploy to Azure Pipeline Migration</h4>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2">
+                    <li>Migrated release pipelines to Azure DevOps, improving integration and deployment efficiency.</li>
+                    <li>Enhanced scalability with Azure-native services.</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-xl font-medium text-gray-800">Sample Web App Deployment</h4>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2">
+                    <li>Developed and deployed a sample web app using Azure DevOps CI/CD pipeline to Azure App Service (<a href="https://gandikotademo.azurewebsites.net/" class="text-blue-600">gandikotademo.azurewebsites.net</a>).</li>
+                    <li>Integrated GitHub repository for source control and automated deployments.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
