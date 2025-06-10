@@ -1,21 +1,29 @@
 # Azure DevOps CI/CD Pipeline Demo
+This project showcases a CI/CD pipeline built with Azure DevOps to deploy an ASP.NET Core web app to Azure App Service. The app displays a professional resume, demonstrating expertise in DevOps, CI/CD automation, and Azure cloud services. View the deployed app at https://gandikotademo.azurewebsites.net/.
+Source code: https://github.com/MrGandikota/Azure-CICD-Demo
 
-This project demonstrates a CI/CD pipeline built with Azure DevOps to deploy a .NET Core web app to Azure App Service. The pipeline includes build, test, and deploy stages, configured using YAML.
+# Features
+Automated CI/CD pipeline using Azure DevOps.
+Zero-downtime deployment to Azure App Service.
+Resume web page styled with Tailwind CSS.
+GitHub integration for source control.
 
-## Features
-- Automated build and test for .NET Core web app.
-- Deployment to Azure App Service with zero downtime.
-- Integration with GitHub for source control.
+# Setup
+Clone the repository: git clone https://github.com/MrGandikota/Azure-CICD-Demo.git
+Create an Azure App Service and resource group in the Azure Portal.
+Set up an Azure DevOps project and connect the repository.
+Configure the service connection in Azure DevOps using a managed identity with Web App Contributor role.
+Run the pipeline (azure-pipelines.yml) to deploy the app.
 
-## Setup
-1. Clone the repository: `git clone https://github.com/MrGandikota/Azure-CICD-Demo.git`
-2. Set up an Azure App Service and resource group.
-3. Configure Azure DevOps with your GitHub repo.
-4. Update `azure-pipelines.yml` with your Azure subscription and App Service name.
-5. Push changes to trigger the pipeline.
-
-## Technologies
+# Technologies
 - Azure DevOps
-- .NET Core
-- YAML
-- Git
+- ASP.NET Core
+- Tailwind CSS
+- Azure App Service
+- GitHub
+
+# Troubleshooting
+Service Connection: Ensure the Azure DevOps service connection has appropriate permissions.
+Parallelism: Verify Microsoft-hosted parallel jobs are available or request a grant at https://aka.ms/azpipelines-parallelism-request.
+Deployment: Check pipeline logs for errors if the app fails to deploy.
+
